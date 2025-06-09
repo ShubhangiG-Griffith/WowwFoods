@@ -1,150 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dine-In Menu | Woww Foods</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Woww Foods Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #000;
-      color: #FFA500;
+      color: #fff;
+      margin: 0;
       padding: 20px;
     }
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+
+    .logo {
+      text-align: center;
       margin-bottom: 20px;
     }
-    .header img {
-      height: 50px;
+
+    .logo img {
+      height: 100px;
     }
-    .header h1 {
-      font-size: 2.5rem;
+
+    .logo h1 {
+      margin: 10px 0 0;
+      color: #ff6600;
     }
-    .note {
-      text-align: center;
-      margin-bottom: 30px;
+
+    .subtext {
       font-size: 1.2rem;
+      color: #fff;
+      margin-top: 5px;
     }
+
     .menu-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
     }
-    .menu-card {
+
+    .section {
       background-color: #1a1a1a;
-      border: 2px solid #FFA500;
-      border-radius: 10px;
-      padding: 20px;
+      border: 2px solid #ff6600;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    .section h2 {
+      background-color: #ff6600;
+      color: black;
+      font-size: 1.3rem;
       text-align: center;
+      margin: -15px -15px 15px;
+      padding: 10px;
+      border-radius: 8px 8px 0 0;
     }
-    .menu-card h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-      border-bottom: 2px solid #FFA500;
-      padding-bottom: 10px;
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+      font-size: 1rem;
     }
-    .menu-item {
-      margin: 10px 0;
-      font-size: 1.1rem;
+
+    .bold {
+      font-weight: bold;
     }
-    .price {
-      color: #fff;
+
+    .highlight {
+      color: #ff6600;
     }
-    footer {
+
+    .note {
       margin-top: 30px;
       text-align: center;
       font-size: 1rem;
-      color: #FFA500;
+      color: #ccc;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .leaf {
+      color: #5edc3b;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo + Woww Foods text -->
-  <div class="header">
-    <img src="logo.png" alt="Woww Foods Logo">
+  <div class="logo">
+    <img src="logo.png" alt="Woww Foods Logo"/>
     <h1>Woww Foods</h1>
+    <div class="subtext">100% <span class="leaf">Veg</span> | 🌶️ 100% Desi</div>
   </div>
 
-  <p class="note">🌱 100% Vegetarian Street Food 🌱</p>
-
-  <!-- Menu Section -->
   <div class="menu-grid">
-
-    <!-- Dosas -->
-    <div class="menu-card">
-      <h2>Dosas (1,2,3)</h2>
-      <div class="menu-item">Plain Dosa 🌱 - <span class="price">€8</span></div>
-      <div class="menu-item">Butter Dosa 🌱 - <span class="price">€8.5</span></div>
-      <div class="menu-item">Butter Paneer Dosa 🌱 - <span class="price">€9.5</span></div>
-      <div class="menu-item">Butter Cheese Dosa 🌱 - <span class="price">€9.5</span></div>
-      <div class="menu-item">Paneer & Cheese Dosa 🌱 - <span class="price">€10.5</span></div>
-      <div class="menu-item">Hyderabadi Masala 🌱 - <span class="price">€12</span></div>
-      <div class="menu-item">Hyderabadi Paneer Masala 🌱 - <span class="price">€13</span></div>
-      <div class="menu-item">Hyderabadi Cheese Masala 🌱 - <span class="price">€13</span></div>
-      <div class="menu-item">Special Hyderabadi 🌱 - <span class="price">€14</span></div>
-      <div class="menu-item">Schewan Cheese 🌱 - <span class="price">€14</span></div>
-      <div class="menu-item">Cheesy Pav Bhaji Dosa 🌱 - <span class="price">€14</span></div>
-      <div class="menu-item">Pizza Dosa 🌱 - <span class="price">€15</span></div>
-      <div class="menu-item">Pani Puri Style Dosa 🌱 - <span class="price">€15</span></div>
+    <!-- DOSAS -->
+    <div class="section">
+      <h2>Dosas</h2>
+      <div class="item">Plain Dosa <span class="leaf">🌱</span> <span>€8</span></div>
+      <div class="item"><span class="bold">Plain Butter Dosa</span> <span>€9</span></div>
+      <div class="item">Plain Butter Paneer Dosa <span>€10</span></div>
+      <div class="item">Plain Butter Cheese Dosa <span>€10</span></div>
+      <div class="item">Plain P&C Dosa <span>€11</span></div>
+      <div class="item">Hyderabadi Masala <span>€12</span></div>
+      <div class="item">Hyderabadi Paneer Masala <span>€13</span></div>
+      <div class="item">Hyderabadi Cheese Masala <span>€13</span></div>
+      <div class="item">Special Hyderabadi <span>€14</span></div>
+      <div class="item">Schezwan Cheese <span>€14</span></div>
+      <div class="item"><span class="bold">Cheesy Pav Bhaji Dosa</span> <span>€14</span></div>
+      <div class="item">Pizza Dosa <span>€15</span></div>
+      <div class="item">Pani Puri Style Dosa <span>€15</span></div>
     </div>
 
-    <!-- Chaat -->
-    <div class="menu-card">
+    <!-- CHAAT -->
+    <div class="section">
       <h2>Chaat</h2>
-      <div class="menu-item">Vada Pav (1,3,4,5) - <span class="price">€5</span></div>
-      <div class="menu-item">Pani Puri (6pc) (4) 🌱 - <span class="price">€7</span></div>
-      <div class="menu-item">Masala Puri (6pc) (4) 🌱 - <span class="price">€8</span></div>
-      <div class="menu-item">Dahi Puri (6pc) (1,4) 🌱 - <span class="price">€8</span></div>
-      <div class="menu-item">Sev Puri (5pc) (4) 🌱 - <span class="price">€8</span></div>
-      <div class="menu-item">Bhel Puri (4) 🌱 - <span class="price">€8</span></div>
+      <div class="item">Vada Pav (1,3,4,5) <span>€5</span></div>
+      <div class="item"><span class="bold">Pani Puri (6pc) (4)</span> <span>€8</span></div>
+      <div class="item">Masala Puri (6pc) (4) <span class="leaf">🌱</span> <span>€8</span></div>
+      <div class="item">Dahi Puri (1,4) <span>€8</span></div>
+      <div class="item">Sev Puri (5pc) (4) <span class="leaf">🌱</span> <span>€8</span></div>
+      <div class="item">Bhel Puri (4) <span class="leaf">🌱</span> <span>€8</span></div>
+      <div class="item">Pav Bhaji (1,3,4) <span>€12</span></div>
     </div>
 
-    <!-- Sandwiches -->
-    <div class="menu-card">
-      <h2>Sandwiches (1,4)</h2>
-      <div class="menu-item">Chilly Cheese Grilled - <span class="price">€7</span></div>
-      <div class="menu-item">Cheese Corn Grilled - <span class="price">€8</span></div>
-      <div class="menu-item">Bombay Grilled Cheese - <span class="price">€8</span></div>
-      <div class="menu-item">Paneer Grilled Cheese - <span class="price">€9</span></div>
+    <!-- SANDWICHES -->
+    <div class="section">
+      <h2>Sandwiches</h2>
+      <div class="item">Chilly Cheese Grilled <span>€8</span></div>
+      <div class="item">Cheese Corn Grilled <span>€8</span></div>
+      <div class="item"><span class="bold">Bombay Grilled Cheese</span> <span>€9</span></div>
+      <div class="item">Paneer Grilled Cheese <span>€10</span></div>
+      <div class="item"><span class="bold">Cheesy Chip Grilled</span> <span>€10</span></div>
     </div>
 
-    <!-- Wraps -->
-    <div class="menu-card">
-      <h2>Wraps (1,4)</h2>
-      <div class="menu-item">Paneer Shawarma Wrap - <span class="price">€10</span></div>
-      <div class="menu-item">Butter Masala Wrap - <span class="price">€12</span></div>
+    <!-- WRAPS -->
+    <div class="section">
+      <h2>Wraps</h2>
+      <div class="item">Paneer Shawarma Wrap <span>€10</span></div>
+      <div class="item">Butter Masala Wrap <span>€12</span></div>
+      <div class="item">Cheesy Batata Chip Wrap <span>€12</span></div>
     </div>
 
-    <!-- Rice -->
-    <div class="menu-card">
+    <!-- RICE -->
+    <div class="section">
       <h2>Rice</h2>
-      <div class="menu-item">Tawa Pulao - <span class="price">€9</span></div>
-      <div class="menu-item">Veg Fried Rice - <span class="price">€9</span></div>
-      <div class="menu-item">Schewan Fried Rice - <span class="price">€10</span></div>
+      <div class="item">Tawa Pulao <span>€10</span></div>
+      <div class="item">Veg Fried Rice <span>€10</span></div>
+      <div class="item">Schezwan Fried Rice <span>€11</span></div>
     </div>
 
-    <!-- Uttapam -->
-    <div class="menu-card">
+    <!-- PARATHAS -->
+    <div class="section">
+      <h2>Fresh Parathas</h2>
+      <div class="item">Paneer Paratha <span>€8</span></div>
+      <div class="item">Cheese Paratha <span>€8</span></div>
+      <div class="item">Special Paratha <span>€10</span></div>
+    </div>
+
+    <!-- UTTAPAM -->
+    <div class="section">
       <h2>Uttapam</h2>
-      <div class="menu-item">Plain U 🌱 - <span class="price">€10</span></div>
-      <div class="menu-item">Chilly Cheese U (1) - <span class="price">€11</span></div>
-      <div class="menu-item">Vegetable U 🌱 - <span class="price">€12</span></div>
-      <div class="menu-item">Paneer & Veggie U 🌱 - <span class="price">€13</span></div>
-      <div class="menu-item">Cheese & Veggie U 🌱 - <span class="price">€13</span></div>
+      <div class="item">Plain U <span class="leaf">🌱</span> <span>€10</span></div>
+      <div class="item">Chilly Cheese U (1) <span>€11</span></div>
+      <div class="item">Vegetable U <span class="leaf">🌱</span> <span>€12</span></div>
+      <div class="item">Paneer & Veggie U <span>€13</span></div>
+      <div class="item">Cheese & Veggie U <span>€13</span></div>
+      <div class="item">Masala Veggie U <span>€14</span></div>
     </div>
-
   </div>
 
-  <footer>
-    <p>All Dosas & Uttapam are served with Chutney only.<br>Add extra grated paneer/cheese for €1.</p>
-  </footer>
+  <div class="note">
+    All Dosas & Uttapam are served with Chutney only.<br>
+    Add extra grated paneer/cheese for €1<br><br>
+    <span class="highlight">All non vegan items can be made vegan on request</span><br><br>
+    <small>Allergens – 1: Dairy, 2: Peanut, 3: Mustard, 4: Gluten, 5: Sesame</small><br>
+    <small>All food is prepared in an environment that contains peanuts, dairy, mustard, sesame & gluten</small>
+  </div>
 
 </body>
 </html>
